@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="178dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etProducto"
+                android:layout_width="154dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="36dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/producto"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etPrecio"
+                android:layout_width="172dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="36dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/precio"
+                android:inputType="numberDecimal" />
+
+
+            <EditText
+                android:id="@+id/etDescripcion"
+                android:layout_width="360dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="-360dp"
+                android:layout_marginTop="105dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/descripcion"
+                android:inputType="textPersonName" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAdd"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:background="@color/teal_200"
+                android:onClick="agregar"
+                android:text="@string/add"
+                android:textColor="#000"
+                app:backgroundTintMode="add" />
+
+            <Button
+                android:id="@+id/btnDel"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:background="@color/teal_200"
+                android:onClick="borrar"
+                android:text="@string/del"
+                android:textColor="#000"
+                app:backgroundTintMode="add" />
+
+            <Button
+                android:id="@+id/btnMod"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@color/teal_200"
+                android:onClick="actualizar"
+                android:text="@string/mod"
+                android:textColor="#000"
+                app:backgroundTintMode="add" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvProductos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

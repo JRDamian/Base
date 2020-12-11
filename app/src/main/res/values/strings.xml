@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Base</string>
+    <string name="producto">Producto</string>
+    <string name="precio">Precio</string>
+    <string name="add">Agregar</string>
+    <string name="mod">Modificar</string>
+    <string name="del">Eliminar</string>
+    <string name="campos_vacios">Debe completar ambos campos</string>
+    <string name="agregado">Producto agregado correctamente</string>
+    <string name="noagregado">El producto NO se pudo agregar!!!</string>
+    <string name="completarambos">Debe completar ambos campos!</string>
+    <string name="eliminacion">Se eliminaron correctamente</string>
+    <string name="prod">productos</string>
+    <string name="noeliminacion">El producto NO se pudo eliminar</string>
+    <string name="nodatanombre">Debe completar el campo Nombre</string>
+    <string name="actualizacion">Se actualizaron correctamente</string>
+    <string name="noactualizacion">El producto NO se pudo actualizar</string>
+    <string name="inexistente">Producto no encontrado</string>
+    <string name="eliminaron">Producto no encontrado</string>
+    <string name="duplicado">No se pueden agregar productos duplicados!</string>
+    <string name="descripcion">Descripcion</string>
+
+</resources>
